@@ -21,7 +21,7 @@ public class LLQueue<E> implements Queue<E>
 		if(size==1)
 			rear = front; //if the dequeued element was the only element, then rear is affected. It must now be equal to front.
 		// ADD MISSING CODE
-		size--;
+		size--; //decrease size by oneS
 
 		return etr;
 	}
