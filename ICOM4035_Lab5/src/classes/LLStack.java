@@ -18,6 +18,7 @@ public class LLStack<E> implements Stack<E>
 		E etr = top.getElement(); 
 
 		// ADD MISSING CODE
+		top = top.getNext();
 
 		return etr;
 	}
@@ -26,9 +27,8 @@ public class LLStack<E> implements Stack<E>
 
 		// ADD MISSING CODE
 		top = new SNode<>(e, top);
-	
+		size++;
 		
-		size++; 
 	}
 
 	public E top() throws EmptyStackException {
