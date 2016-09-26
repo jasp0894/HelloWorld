@@ -16,8 +16,12 @@ public class LLQueue<E> implements Queue<E>
 		if (isEmpty())
 			throw new EmptyQueueException("dequeue: Queue is empty."); 
 		E etr = front.getElement(); 
-
+		
+		front = front.getNext(); //unlinks the previous front when the list is not empty
+		if(size==1)
+			rear = front; //if the dequeued element was the only element, then rear is affected. It must now be equal to front.
 		// ADD MISSING CODE
+		size--;
 
 		return etr;
 	}

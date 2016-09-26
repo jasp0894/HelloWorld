@@ -19,6 +19,7 @@ public class LLStack<E> implements Stack<E>
 
 		// ADD MISSING CODE
 		top = top.getNext();
+		size--;
 
 		return etr;
 	}
