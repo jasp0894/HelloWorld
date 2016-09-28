@@ -8,7 +8,6 @@ public class SymmetricStringAnalyzer {
 	}
 
 	
-	//blaaaaaaaaaaaaaaaaaaaaaa
 	/**
 	 * Determines if the string s is symmetric
 	 * @return true if it is; false, otherwise. 
@@ -32,7 +31,10 @@ public class SymmetricStringAnalyzer {
 	            else 
 	                return false; 
 	    } 
-	    return true; 
+	    if(!stack.isEmpty())
+	    	return false;
+	    else	    		
+	    	return true; 
 		
 	}
 
