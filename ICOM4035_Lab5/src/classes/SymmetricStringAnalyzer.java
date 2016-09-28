@@ -43,9 +43,20 @@ public class SymmetricStringAnalyzer {
 	}
 
 	public String parenthesizedExpression() throws StringIsNotSymmetricException {
-		// ADD MISSING CODE
+		if(!this.isValidContent()) throw new StringIsNotSymmetricException();
+		String pExpressionString = new String("");
+		
+		for(int i =0; i<s.length(); i++){
+			char c = s.charAt(i);
+			if(Character.isUpperCase(c))
+				pExpressionString = pExpressionString + "<" + c + " ";
+			else
+				pExpressionString = pExpressionString + c + "> "; 
+			}
+		
 
-		return null; // need to change if necessary....
+		
+		return pExpressionString; // need to change if necessary....
 	}
 
 }
