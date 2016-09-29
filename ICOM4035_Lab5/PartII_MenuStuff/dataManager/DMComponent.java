@@ -39,6 +39,19 @@ public class DMComponent {
 	}
 	
 	/**
+	 * Removes the list whose name is name from the list. 
+	 * @param name name of the list
+	 */
+	public void removeList(String name){
+		int index = getIndexForList(name); 
+		if (index == -1) 
+			IOComponent.getComponent().output("Invalid trial to remove non-existing list with name " + name + ".\n"); 
+		else { 
+			lol.remove(index);
+		}
+	}
+	
+	/**
 	 * Adds a new element to a particular list.
 	 * @param name the name of the list
 	 * @param value the value to add

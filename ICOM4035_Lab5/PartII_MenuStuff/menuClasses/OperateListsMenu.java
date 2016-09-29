@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class OperateListsMenu extends Menu {
 	private static OperateListsMenu OLM = new OperateListsMenu(); 
-	private OperateListsMenu() { 
+	private OperateListsMenu() { //singleton
 		super(); 
 		String title; 
 		ArrayList<Option> options = new ArrayList<Option>();  
