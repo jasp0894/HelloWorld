@@ -2,8 +2,7 @@ package classes;
 
 import interfaces.Stack;
 
-public class LLStack<E> implements Stack<E>
-{
+public class LLStack<E> implements Stack<E> {
 	private SNode<E> top; 
 	private int size; 
 	
