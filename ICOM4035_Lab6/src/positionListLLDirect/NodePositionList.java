@@ -162,7 +162,7 @@ public class NodePositionList<T> implements PositionList<T> {
 	}
 	
 	/**
-	 * Method to comply with Iterble...
+	 * Method to comply with Iterable...
 	 */
 	public Iterator<T> iterator() {
 		return new PositionListElementsIterator<T>(this);

@@ -42,6 +42,7 @@ public class PositionListElementsIterator<T> implements Iterator<T> {
 
 	public void remove() {
 		// TODO Auto-generated method stub
+		//It is not obligatory to implement this method. Some implementor classes just don't do it.
 		
 	}
 }
