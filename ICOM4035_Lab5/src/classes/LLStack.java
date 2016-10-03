@@ -20,6 +20,7 @@ public class LLStack<E> implements Stack<E> {
 		top = top.getNext();
 		size--;
 
+
 		return etr;
 	}
 
